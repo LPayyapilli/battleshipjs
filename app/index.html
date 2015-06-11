@@ -11,6 +11,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -20,122 +21,46 @@
     <![endif]-->
 
     <!-- PUT BODY HERE -->
-
-
-    <header>
-      <img id='logo' src='https://vgboxart.com/resources/logo/2391_battleship-prev.png'>
-      <h2>By: Aaron Weinberg</h2>
-    </header>
-    <section id="main">
-      <section id="chat">
-        <div id='messagesDiv'></div>
-        <button type="text" id="clear">Clear Chat</button>
-        <input type='text' id='nameInput' placeholder='Name'>
-        <input type='text' id='messageInput' placeholder='Message'>
-      </section>
-      <section id = "score"></section>
-      <section id="play">
-        <article id="guess">
-          <div id="a0"></div>
-          <div id="a1"></div>
-          <div id="a2"></div>
-          <div id="a3"></div>
-          <div id="a4"></div>
-          <div id="a5"></div>
-          <div id="a6"></div>
-          <div id="a7"></div>
-          <div id="a8"></div>
-          <div id="a9"></div><break>
-          <div id="b0"></div>
-          <div id="b1"></div>
-          <div id="b2"></div>
-          <div id="b3"></div>
-          <div id="b4"></div>
-          <div id="b5"></div>
-          <div id="b6"></div>
-          <div id="b7"></div>
-          <div id="b8"></div>
-          <div id="b9"></div><break>
-          <div id="c0"></div>
-          <div id="c1"></div>
-          <div id="c2"></div>
-          <div id="c3"></div>
-          <div id="c4"></div>
-          <div id="c5"></div>
-          <div id="c6"></div>
-          <div id="c7"></div>
-          <div id="c8"></div>
-          <div id="c9"></div><break>
-          <div id="d0"></div>
-          <div id="d1"></div>
-          <div id="a2"></div>
-          <div id="d3"></div>
-          <div id="d4"></div>
-          <div id="d5"></div>
-          <div id="d6"></div>
-          <div id="d7"></div>
-          <div id="d8"></div>
-          <div id="d9"></div><break>
-          <div id="e0"></div>
-          <div id="e1"></div>
-          <div id="e2"></div>
-          <div id="e3"></div>
-          <div id="e4"></div>
-          <div id="e5"></div>
-          <div id="e6"></div>
-          <div id="e7"></div>
-          <div id="e8"></div>
-          <div id="e9"></div>
-        </article>
-        <article id="piece">
-          <div id="a0"></div>
-          <div id="a1"></div>
-          <div id="a2"></div>
-          <div id="a3"></div>
-          <div id="a4"></div>
-          <div id="a5"></div>
-          <div id="a6"></div>
-          <div id="a7"></div>
-          <div id="a8"></div>
-          <div id="a9"></div><break>
-          <div id="b0"></div>
-          <div id="b1"></div>
-          <div id="b2"></div>
-          <div id="b3"></div>
-          <div id="b4"></div>
-          <div id="b5"></div>
-          <div id="b6"></div>
-          <div id="b7"></div>
-          <div id="b8"></div>
-          <div id="b9"></div><break>
-          <div id="c0"></div>
-          <div id="c1"></div>
-          <div id="c2"></div>
-          <div id="c3"></div>
-          <div id="c4"></div>
-          <div id="c5"></div>
-          <div id="c6"></div>
-          <div id="c7"></div>
-          <div id="c8"></div>
-          <div id="c9"></div><break>
-          <div id="d0"></div>
-          <div id="d1"></div>
-          <div id="a2"></div>
-          <div id="d3"></div>
-          <div id="d4"></div><break>
-          <div id="e0"></div>
-          <div id="e1"></div>
-          <div id="e2"></div>
-          <div id="e3"></div>
-          <div id="e4"></div>
-        </article>
-      </section>
-
-    </section>
-
-
-
-
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-2"><div class="box" id="a0"></div></div>
+          <div class="col-xs-2"><div class="box" id="a1"></div></div>
+          <div class="col-xs-2"><div class="box" id="a2"></div></div>
+          <div class="col-xs-2"><div class="box" id="a3"></div></div>
+          <div class="col-xs-2"><div class="box" id="a4"></div></div>
+          <div class="col-xs-2"><div class="box" id="a5"></div></div>
+          <div class="col-xs-2"><div class="box" id="b0"></div></div>
+          <div class="col-xs-2"><div class="box" id="b1"></div></div>
+          <div class="col-xs-2"><div class="box" id="b2"></div></div>
+          <div class="col-xs-2"><div class="box" id="b3"></div></div>
+          <div class="col-xs-2"><div class="box" id="b4"></div></div>
+          <div class="col-xs-2"><div class="box" id="b5"></div></div>
+          <div class="col-xs-2"><div class="box" id="c0"></div></div>
+          <div class="col-xs-2"><div class="box" id="c1"></div></div>
+          <div class="col-xs-2"><div class="box" id="c2"></div></div>
+          <div class="col-xs-2"><div class="box" id="c3"></div></div>
+          <div class="col-xs-2"><div class="box" id="c4"></div></div>
+          <div class="col-xs-2"><div class="box" id="c5"></div></div>
+          <div class="col-xs-2"><div class="box" id="d0"></div></div>
+          <div class="col-xs-2"><div class="box" id="d1"></div></div>
+          <div class="col-xs-2"><div class="box" id="a2"></div></div>
+          <div class="col-xs-2"><div class="box" id="d3"></div></div>
+          <div class="col-xs-2"><div class="box" id="d4"></div></div>
+          <div class="col-xs-2"><div class="box" id="d5"></div></div>
+          <div class="col-xs-2"><div class="box" id="e0"></div></div>
+          <div class="col-xs-2"><div class="box" id="e1"></div></div>
+          <div class="col-xs-2"><div class="box" id="e2"></div></div>
+          <div class="col-xs-2"><div class="box" id="e3"></div></div>
+          <div class="col-xs-2"><div class="box" id="e4"></div></div>
+          <div class="col-xs-2"><div class="box" id="e5"></div></div>
+          <div class="col-xs-2"><div class="box" id="f0"></div></div>
+          <div class="col-xs-2"><div class="box" id="f1"></div></div>
+          <div class="col-xs-2"><div class="box" id="f2"></div></div>
+          <div class="col-xs-2"><div class="box" id="f3"></div></div>
+          <div class="col-xs-2"><div class="box" id="f4"></div></div>
+          <div class="col-xs-2"><div class="box" id="f5"></div></div>
+        </div>
+    </div>
 
 
     <!-- build:js(.) scripts/oldieshim.js -->
