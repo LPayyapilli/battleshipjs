@@ -1,7 +1,54 @@
-.box{
-  height: 150px;
-  width: 150px;
-  background-color: blue;
-  margin: 5px;
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+.row{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#header_container{
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+}
+header{
+  padding: 30px;
+  font-size: 40pt;
+  color:#ffffff;
+  font-weight: bold;
+}
+article h2{
+  font-size: 40pt;
+}
+article{
+  margin-top:12%;
+  font-size: 28pt;
+  color:#ffffff;
+  text-align: center;
+}
+#head_left{
+  padding-left: 50px;
+  text-align: left;
+}
+#head_right{
+  padding-right: 50px;
+  text-align: right;
+}
+
+.box_container{
+  width:10%;
   float:left;
+}
+.box{
+  height: calc(10vh);
+  width: 100%;
+  background-color: #3498db;
+  margin: 0;
+  padding: 0;
+}
+.box:hover{
+  filter: invert(30%);
 }
